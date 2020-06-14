@@ -15,7 +15,7 @@ document.querySelector('form').addEventListener('submit',(e)=>{
     messageOne.textContent='Loading...'
     messageTwo.textContent='';
     console.log(city);
-    fetch('http://localhost:3000/weather?address='+city).then((response)=>{
+    fetch('/weather?address='+city).then((response)=>{
     
     response.json().then((data)=>{
 
